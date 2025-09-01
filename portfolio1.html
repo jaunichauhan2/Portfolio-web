@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jauni Chauhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+  
+
+   body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f4f4f4;
+       padding: 0;
+    }
+   
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 0.5rem 0; /* height kam hogi */
+      text-align: center;
+      position: fixed;     /* scroll pe bhi header dikhai dega */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* optional shadow for depth */
+    
+}
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      transition: background-color 0.3s, border-bottom 0.3s;
+    }
+    nav a[href="#about"] {
+      background-color: #f94144;
+    }
+    nav a[href="#skills"] {
+      background-color: #f3722c;
+    }
+    nav a[href="#projects"] {
+      background-color: #f9c74f;
+      color: #000;
+    }
+    nav a[href="#resume"] {
+      background-color: #90be6d;
+    }
+    nav a[href="#contact"] {
+      background-color: #577590;
+    }
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      margin: 0.5rem auto 2rem auto;
+      border-radius: 2px;
+    }
+    #about h2::after { background: linear-gradient(90deg, #f94144, #f3722c); }
+    #skills h2::after { background: linear-gradient(90deg, #f3722c, #f8961e); }
+    #projects h2::after { background: linear-gradient(90deg, #f9c74f, #90be6d); }
+    #resume h2::after { background: linear-gradient(90deg, #90be6d, #43aa8b); }
+    #contact h2::after { background: linear-gradient(90deg, #577590, #277da1); }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .skills .card, .projects .card, .resume .card, .contact .card, .certificate .card {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      padding: 1rem 1.5rem;
+      width: 200px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      transition: transform 0.4s ease, background 0.4s ease;
+      cursor: pointer;
+    }
+    .skills .card:hover, .projects .card:hover, .resume .card:hover, .contact .card:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jauni Chauhan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2 style=" padding-top: 80px;">About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">I am Jauni Chauhan, an MCA student with a solid foundation in computer science and programming. I specialize in Java, Python, HTML, CSS, JavaScript, and MySQL. I am passionate about building real-world applications and constantly learning new technologies to improve my skills.</p>
+  </section>
+
+  <section id="skills" data-aos="zoom-in-up">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card"><a href="https://www.w3schools.com/java/" style="text-decoration: none ; color: white;"target="_blank">Java</a></div>
+      <div class="card"><a href="https://www.w3schools.com/python/" style="text-decoration: none ; color: white;"target="_blank">Python</a></div>
+      <div class="card"><a href="https://www.w3schools.com/html/" style="text-decoration: none ; color: white;"target="_blank">HTML</a></div>
+      <div class="card"><a href="https://www.w3schools.com/css/" style="text-decoration: none ; color: white;"target="_blank">CSS</a></div>
+      <div class="card"><a href="https://www.w3schools.com/js/" style="text-decoration: none ; color: white;"target="_blank">JavaScript</a></div>
+      <div class="card"><a href="https://www.w3schools.com/MySQL/" style="text-decoration: none ; color: white;"target="_blank">MySQL</a></div>
+    </div>
+  </section> 
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <img src="portfolio.png" width="30px" height="30px">
+        <p>A simple portfolio website built using HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <img src="calculator.png" width="30px" height="30px">
+        <a href="Mycalculator.html" style="text-decoration: none;" target="_blank"><p style="color: white;">Modern Calculator Web App using HTML, CSS & JavaScript</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" data-aos="fade-up"  class="resume">
+    <h2>Resume</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <div class="card">
+      <p>Download MY Resume From here :</p>
+      <img src="rrr.png" width="40px" height="40px">
+      <a href="jauni chauhan resume pdf.pdf" target="_blank" class="btn">Download Resume</a>
+    </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up" class="certificate">
+     <h2>My Certificates</h2> 
+    
+    <div class="projects">
+      <div class="card">
+        <h3>See Certificate</h3> 
+       <img src="certificate.png" alt="certificate" width="30px" height="30px">
+        <a href="python certificate pdf.pdf" style="text-decoration: none;" target="_blank"><p style="color: white;">Successfully completed the <b>Python 3.4.3 programming course</b> through the Spoken Tutorial Project by IIT  Bombay in April 2025.</p></a>
+      </div>
+      <div class="card">
+        <h3>See Certificate</h3>
+        <img src="certificate.png" alt="certificate" width="30px" height="30px">
+        <a href="java certificate pdf.pdf" style="text-decoration: none;" target="_blank"><p style="color: white;">Successfully completed the <b>Java programming course</b> through the Spoken Tutorial Project by IIT  Bombay in May 2025.</p></a> 
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact" data-aos="fade-up" class="contact">
+    <h2>Contact</h2>
+    <div style="display: flex; justify-self: center; align-items: center;">
+    <div class="card" style="width: 250px;  word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">
+      
+      <p ><strong>Email: </strong><a href="mailto:ankitak3591@gmail.com" style="color: white; text-decoration: underline; font-weight: 500;">jauniChauhan@gmail.com</a></p>
+      <h4>Contact Number : 9012074044</h4>
+    
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jauni Chauhan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
